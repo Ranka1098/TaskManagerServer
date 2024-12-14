@@ -8,7 +8,7 @@ const fetchedAllTask = async (req, res) => {
     res.status(200).json({ msg: "Tasks fetched successfully", data: tasks });
   } catch (error) {
     // error handling
-    res.status(500).json({ msg: "task is not created", error: error.message });
+    res.status(500).json({ msg: "Error fetching tasks", error: error.message });
   }
 };
 
