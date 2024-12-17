@@ -10,6 +10,7 @@ const taskSchema = new mongoose.Schema(
     },
     isDone: {
       type: Boolean,
+      default: false, // Default value
       reqiured: true,
     },
   },
